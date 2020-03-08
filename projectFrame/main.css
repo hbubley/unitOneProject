@@ -10,7 +10,7 @@ cite {font-style:normal;}
 fieldset{border-width:0; padding:0; margin:0;}
 /* taken from: https://medium.com/@elad/normalize-css-or-css-reset-9d75175c5d1e */
 *{
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 .background {
   width: 100%;
@@ -118,7 +118,7 @@ fieldset{border-width:0; padding:0; margin:0;}
     margin: 0 auto;
   }
   article:nth-of-type(1)>section:nth-of-type(2)>div{
-    font-size: 1.2em;
+    font-size: 1.2vw;
     font-weight: bold;
     padding: 2%;
     display: flex;
