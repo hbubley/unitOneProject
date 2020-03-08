@@ -1,7 +1,7 @@
 // entry screen
 const $enterScreen = $('<section>').css({'width': '100vw', 'height': '100vh', 'background-size': 'cover', 'display': 'flex', 'align-items': 'center', 'justify-content': 'center', 'box-shadow': '5px 5px 10px #888888',}).addClass('background')     
 let $square = $('<div>').css({'width':'100vw','height':'100vh','display':'flex','align-items':'center','justify-content': 'center', 'background':'rgba(230,230,230,0.3)',})
-let $button = $('<button>').html('ENTER').css('font-size', '13em').css('letter-spacing', '2%').css('font-family', 'Barrio').css('background-color', 'rgba(244, 244, 244, 0.7)').css('border', 'solid').css('padding', '2%')
+let $button = $('<button>').html('ENTER').css('font-size', '13vw').css('letter-spacing', '2%').css('font-family', 'Barrio').css('background-color', 'rgba(244, 244, 244, 0.7)').css('border', 'solid').css('padding', '2%')
 $('body').prepend($enterScreen) 
 $enterScreen.append($square)
 $square.append($button)

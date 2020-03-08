@@ -10,7 +10,7 @@ cite {font-style:normal;}
 fieldset{border-width:0; padding:0; margin:0;}
 /* taken from: https://medium.com/@elad/normalize-css-or-css-reset-9d75175c5d1e */
 *{
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 .background {
   width: 100%;
@@ -45,7 +45,6 @@ fieldset{border-width:0; padding:0; margin:0;}
   }
   header>div{
     background: rgba(244, 244, 244, 0.8);
-    min-width: 40%;
     padding: 3%;
     border: solid;
     box-shadow: 0px 0px 40px 2px #888888;
@@ -53,10 +52,10 @@ fieldset{border-width:0; padding:0; margin:0;}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
   }
   header>div>h1{
-    font-size: 6.5em;
+    font-size: 6.5vw;
     font-family: Barrio;
     flex: 1;
     padding-bottom: 6%;
@@ -64,7 +63,7 @@ fieldset{border-width:0; padding:0; margin:0;}
   header>div>a{
     text-align: center;
     padding: 1%;
-    font-size: 2.5em;
+    font-size: 2.5vw;
     min-width: auto;
     border: solid;
     width: 50%;
@@ -95,7 +94,7 @@ fieldset{border-width:0; padding:0; margin:0;}
     grid-area: h;
     text-align: center;
     font-family: Barrio;
-    font-size: 3.5em;
+    font-size: 3.5vw;
   }
 
   article:nth-of-type(1)>section:nth-of-type(2){
@@ -106,7 +105,7 @@ fieldset{border-width:0; padding:0; margin:0;}
   }
   article:nth-of-type(1)>section:nth-of-type(3){
     grid-area: about;
-    font-size: 1.2em;
+    font-size: 1.2vw;
     box-shadow: 0px 0px 10px 0px rgb(81, 162, 69);
     border-radius: 3px;
     padding: 5%;
@@ -153,7 +152,7 @@ fieldset{border-width:0; padding:0; margin:0;}
    margin: 0 auto;
    padding: 2%;
    font-family: Barrio;
-   font-size: 3em;
+   font-size: 3vw;
    text-shadow: 2px 2px 8px rgb(128, 244, 255);
    background: rgba(244, 244, 244, 0.8);
    border:solid;
@@ -202,7 +201,7 @@ fieldset{border-width:0; padding:0; margin:0;}
     justify-content: center;
   }
   h3{
-    font-size: 3em;
+    font-size: 3vw;
   }
   main>div{
     position: relative;
