@@ -26,6 +26,7 @@ fieldset{border-width:0; padding:0; margin:0;}
   body {
     display: flex;
     flex-direction: column;
+    font-family: 'Josefin Slab', serif;
   } 
 
   /* hero section */
@@ -63,14 +64,21 @@ fieldset{border-width:0; padding:0; margin:0;}
   header>div>a{
     text-align: center;
     padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     font-size: 2.5vw;
     min-width: auto;
     border: solid;
     width: 50%;
-    height: 70%;
+    height: 100%;
+    box-shadow: 0px 0px 20px 1px #888888;
+    background: rgb(137, 255, 137);
+  }
+  header>div>a:hover{
+    font-size: 3vw;
+    box-shadow: 0px 0px 20px 1px #000000;
   }
   header>div:hover{
-    text-shadow: 2px 2px 8px #888888;
     box-shadow: 0px 0px 10px 2px rgb(167, 180, 251);
   }
 
