@@ -14,7 +14,7 @@ let $returnButton = $('<button>').html('Click me to go back!')
 //create portfolio functions
 function addPortfolioApp(projects){
     console.log('app-projects', projects)
-        $portfolioDiv.css({'width':'80%', 'height': '80%','border': 'solid','display': 'flex','align-items': 'center','justify-content': 'space-between', 'flex-direction':'row', 'flex-wrap':'wrap','box-shadow': '5px 5px 10px #888888'})
+        $portfolioDiv.css({'width':'80%', 'height': '80%','border': 'solid','display': 'flex','align-items': 'center','justify-content': 'space-between', 'flex-direction':'row', 'flex-wrap':'wrap','box-shadow': '5px 5px 10px #888888', 'background':'rgba(244,244,244,0.8)'})
         for (let i = 0; i < projects.length; i++) {
             let $card = `<div class="card">
                 <img class="pImg" src="${projects[i].image}"></img>
