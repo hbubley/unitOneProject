@@ -22,13 +22,20 @@ $portfolioButton = $('.portfolioButton')
 console.log("$portfolioButton", $portfolioButton)
 $portfolioContainer = $('article:nth-of-type(2)')
 console.log("$portfolioContainer", $portfolioContainer)
+$portfolioDiv=('<div>')
+$buttonDiv=('<div>')
+$returnButton = $('<button>').html('Click me to go back!')
 
 $portfolioButton.click(function(){
     $(this).hide()
+    $returnButton.show()
     $portfolioContainer.css('height', '100vh')
-    $potfolioButton.hide()
-    $portfolioDiv=('<div>')
-    $returnDiv
-    $returnButton = $('<button>').
     $portfolioContainer.append($returnButton)
 })
+
+$returnButton.click(function(){
+    $(this).hide()
+    $portfolioButton.show()
+    $portfolioContainer.css('height', 'auto')
+})
+
