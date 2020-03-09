@@ -9,7 +9,7 @@ $('main').hide()
 
 //portfolio variables
 let $portfolioButton = $('.portfolioButton')
-let $portfolioContainer = $('article:nth-of-type(2)')
+let $portfolioContainer = $('#portfolio')
 let $portfolioDiv=$('<div>')
 let $returnButton = $('<button>').html('Click me to go back!')
 

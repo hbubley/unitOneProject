@@ -28,7 +28,29 @@ fieldset{border-width:0; padding:0; margin:0;}
     flex-direction: column;
     font-family: 'Josefin Slab', serif;
   } 
-
+  nav{
+    position: fixed;
+    top:0;
+    background: white;
+  }
+  nav>section{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 3vw;
+    font-size: 1.3vw;
+    width: 100vw;
+  }
+  nav>section>section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40vw;
+  }
+  nav>section>section>a:hover{
+    text-shadow: 2px 2px 8px rgb(128, 244, 255);
+  }
   /* hero section */
   header {
     /* max-width: 100vw; */
@@ -254,7 +276,7 @@ fieldset{border-width:0; padding:0; margin:0;}
     /* font-size: 2vw; */
   }
   button>input{
-    font-size: 100vw;
+    font-size: 3vw;
   }
 @keyframes parallax_bg {
     100% { background-position-x: 100%, 100%, 0%, 0%, 90%;}
