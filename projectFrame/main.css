@@ -182,8 +182,19 @@ fieldset{border-width:0; padding:0; margin:0;}
     90% { transform: rotate(-10deg); }
     100% { transform: rotate(10deg); }
 }
-
-
+.pImg{
+  height: 10vw;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3%;
+}
+.overlay{
+  background: black;
+}
   /* contact me section */
   article:nth-of-type(3){
     padding: 5%;
