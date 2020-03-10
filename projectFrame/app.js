@@ -26,7 +26,7 @@ function addPortfolioApp(projects){
                         <i class="${projects[i].description2}"></i>
                         <i class="${projects[i].description3}"></i>
                     </div>
-                    <a href="${projects[i].url}" target="_blank"><h1>Check me out!</h1></a>
+                    <a href="${projects[i].url}" target="_blank"><h1>[Check me out!]</h1></a>
                 </div>
             </div>`
             $portfolioDiv.append($card)
@@ -56,7 +56,7 @@ fetchPortfolio();
 $button.mouseover(function(){
     $button.css('background', 'rgb(83, 177, 231)').css('box-shadow', '10px 10px 15px #111111')
 })
-$button.mouseout(() => $button.css('background-color', 'rgba(244,244,244,0.7)').css('border', 'solid').css('box-shadow', '5px 5px 10px #888888'))
+$button.mouseout(() => $button.css('background-color', 'rgba(244,244,244,0.7)').css('border', 'solid 1.5ps').css('box-shadow', '5px 5px 10px #888888'))
 $button.on('click')
 
 $button.click(function(){
