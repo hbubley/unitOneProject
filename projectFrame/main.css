@@ -222,7 +222,27 @@ fieldset{border-width:0; padding:0; margin:0;}
   button>img:hover{
     animation: wiggle 2s infinite;
   }
-
+  .cardOverlay{
+    width:100%;
+    text-align: center;
+    height:100%;
+    padding: 3%;
+  }
+  .card{
+    height: 50%;
+    background-color: white;
+    margin: 2% auto;
+    width: 30%;
+  }
+  .iconDescription{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: .5%;
+    width: 50%;
+    padding: 2%;
+    margin: 0% auto;
+  }
   @keyframes wiggle {
     0% { transform: rotate(10deg); }
     10% { transform: rotate(-10deg); }
@@ -237,7 +257,7 @@ fieldset{border-width:0; padding:0; margin:0;}
     100% { transform: rotate(10deg); }
 }
 .pImg{
-  height: 10vw;
+  height: 15vw;
 }
 .card{
   display: flex;

@@ -15,13 +15,17 @@ let $returnButton = $('<button>').html('Click me to go back!')
 
 //create portfolio functions
 function addPortfolioApp(projects){
-        $portfolioDiv.css({'width':'80%', 'height': '80%','border': 'solid','display': 'flex','align-items': 'center','justify-content': 'space-between', 'flex-direction':'row', 'flex-wrap':'wrap','box-shadow': '5px 5px 10px #888888', 'background':'rgba(244,244,244,0.8)', 'margin-top':'2%'})
+        $portfolioDiv.css({'width':'97%', 'height': '80%','border': 'solid','display': 'flex','align-items': 'center','justify-content': 'space-between', 'flex-direction':'row', 'flex-wrap':'wrap','box-shadow': '5px 5px 10px #888888', 'background':'rgba(244,244,244,0.8)', 'margin-top':'2%'})
         for (let i = 0; i < projects.length; i++) {
             let $card = `<div class="card">
                 <img class="pImg" src="${projects[i].image}"></img>
                 <div class="cardOverlay">
                     <h4>${projects[i].title}</h4>
-                    <p>${projects[i].description}</p>
+                    <div class="iconDescription">
+                        <i class="${projects[i].description}"></i>
+                        <i class="${projects[i].description2}"></i>
+                        <i class="${projects[i].description3}"></i>
+                    </div>
                     <a href="${projects[i].url}" target="_blank">Check me out!</a>
                 </div>
             </div>`
@@ -39,6 +43,8 @@ function fetchPortfolio(){
                 title: project.gsx$title.$t,
                 image: project.gsx$image.$t,
                 description: project.gsx$description.$t,
+                description2: project.gsx$description2.$t,
+                description3: project.gsx$description3.$t,
                 url: project.gsx$url.$t,
               }
             })
