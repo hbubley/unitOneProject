@@ -26,7 +26,7 @@ function addPortfolioApp(projects){
                         <i class="${projects[i].description2}"></i>
                         <i class="${projects[i].description3}"></i>
                     </div>
-                    <a href="${projects[i].url}" target="_blank">Check me out!</a>
+                    <a href="${projects[i].url}" target="_blank"><h1>Check me out!</h1></a>
                 </div>
             </div>`
             $portfolioDiv.append($card)
