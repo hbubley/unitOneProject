@@ -119,6 +119,11 @@ fieldset{border-width:0; padding:0; margin:0;}
   header>div>a:hover{
     box-shadow: 0px 0px 20px 1px #000000;
   }
+  nav>section>div>a>i:hover{
+    animation: wiggle 2s infinite;
+    text-shadow: 2px 2px 8px rgb(255, 128, 226);
+
+  }
   header>div:hover{
     box-shadow: 0px 0px 10px 2px rgb(167, 180, 251);
   }
