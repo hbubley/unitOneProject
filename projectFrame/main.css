@@ -57,7 +57,7 @@ fieldset{border-width:0; padding:0; margin:0;}
   nav>section>div>a:hover{
     text-shadow: 2px 2px 8px rgb(128, 244, 255);
   }
-  #specialButton{
+  /* #specialButton{
     justify-content: flex-end;
     padding-right: 3%;
     font-size: 1vw;
@@ -66,7 +66,7 @@ fieldset{border-width:0; padding:0; margin:0;}
     flex-direction: column;
     align-items: center;
     width: 15vw;
-  }
+  } */
   i{
     font-size: 2.3vw;
   }
@@ -302,11 +302,24 @@ fieldset{border-width:0; padding:0; margin:0;}
     100% { background-position-x: 100%, 100%, 0%, 0%, 90%;}
   }
 
-  
-/* @media only screen (max-device-width: 800px) 
-  and (-webkit-min-device-pixel-ratio: 3) 
-{
 
-} */
+@media (max-width: 700px) 
+{
+  article:nth-of-type(3){
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+  }
+  article:nth-of-type(3)>section
+  {
+    padding-top: 2%;
+  }
+  form{
+    width: 70vw;
+  }
+  article:nth-of-type(3)>section>img{
+    display: none;
+  }
+} 
 
 
