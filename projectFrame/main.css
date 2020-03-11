@@ -52,6 +52,7 @@ fieldset{border-width:0; padding:0; margin:0;}
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: nowrap;
     width: 100vw;
   }
   nav>section>div>a{
