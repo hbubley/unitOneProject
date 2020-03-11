@@ -416,6 +416,7 @@ fieldset{border-width:0; padding:0; margin:0;}
   }
   form{
     width: 70vw;
+    height: 40vh;
   }
   article:nth-of-type(3)>section>img{
     display: none;
