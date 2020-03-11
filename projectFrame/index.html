@@ -114,6 +114,17 @@
                     <button><input type="submit" value="Send it!"></button>
                 
                   </form>
+                  <script>
+                    const scriptURL = '<https://script.google.com/macros/s/AKfycbzamrUXrJZrf1q0zQuxZE7W2CPSaF5L8wLpmRXkzTkp02j2WPQ/exec>'
+                    const form = document.forms['submit-to-google-sheet']
+                  
+                    form.addEventListener('submit', e => {
+                      e.preventDefault()
+                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                        .then(response => console.log('Success!', response))
+                        .catch(error => console.error('Error!', error.message))
+                    })
+                  </script>
             </section>
         </article>
 
