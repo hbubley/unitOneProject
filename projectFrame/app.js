@@ -13,7 +13,7 @@ let $aboutMeDescription = $('#aboutMeDescription > p')
 
 let $aboutMeButton = $('#aboutMeButton').addClass('deleteButton');
 $aboutMeDescription.hide()
-let $deleteButton = $('<button>').html('DELETE THE TEXT').addClass('deleteButton');
+let $deleteButton = $('<button>').html('LESS').addClass('deleteButton');
 $deleteButton.hide()
 $('#aboutMeDescription').append($deleteButton)
 $aboutMeButton.click(function(){
@@ -46,7 +46,7 @@ function addPortfolioApp(projects){
                         <i class="${projects[i].description2}"></i>
                         <i class="${projects[i].description3}"></i>
                     </div>
-                    <a href="${projects[i].url}" target="_blank"><h1>[Check me out!]</h1></a>
+                    <button href="${projects[i].url}" target="_blank">Check me out!</button>
                 </div>
             </div>`
             $portfolioDiv.append($card)
