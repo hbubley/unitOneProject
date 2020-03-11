@@ -113,10 +113,7 @@ $returnButton.click(function(){
     $portfolioDiv.hide()
 })
 
-function reset(){ 
-    $('input').reset() 
-    $(this).alert('thank you for submitting!')
-}
+
 //cat stuff
 // let $catDiv = $('<div>').css({'border':'solid', 'display':'flex', 'justify-content':'center', 'align-items':'center', 'max-height':'30vw'})
 // let $catButton=$('#specialButton')
@@ -130,3 +127,4 @@ function reset(){
 
 
 //form api connecting it to google sheet https://github.com/jamiewilson/form-to-google-sheets learned how here
+
