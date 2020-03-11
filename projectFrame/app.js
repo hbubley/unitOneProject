@@ -11,23 +11,11 @@ $('main').hide()
 //aboutMe section
 let $aboutMeDescription = $('#aboutMeDescription > p')
 
-let $aboutMeButton = $('#aboutMeButton').css({
-    'border':'solid 1px',
-    'padding': '2%',
-    'font-family':'Barrio',
-    'font-size':'1.2vw',
-})
+let $aboutMeButton = $('#aboutMeButton').addClass('deleteButton');
 $aboutMeDescription.hide()
-let $deleteButton = $('<button>').html('DELETE THE TEXT').css({
-    'border':'solid 1px',
-    'padding': '2%',
-    'font-family':'Barrio',
-    'font-size':'1.2vw',
-    'margin-top':'2%',
-})
+let $deleteButton = $('<button>').html('DELETE THE TEXT').addClass('deleteButton');
 $deleteButton.hide()
 $('#aboutMeDescription').append($deleteButton)
-
 $aboutMeButton.click(function(){
     $aboutMeDescription.toggle()
     $aboutMeButton.toggle()
