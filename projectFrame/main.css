@@ -26,7 +26,7 @@ fieldset{border-width:0; padding:0; margin:0;}
   body {
     display: flex;
     flex-direction: column;
-    font-family: 'Spartan', serif;
+    font-family: 'Muli', serif;
   } 
   nav{
     position: fixed;
