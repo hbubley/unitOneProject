@@ -42,6 +42,7 @@ fieldset{border-width:0; padding:0; margin:0;}
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     height: 4vw;
     font-size: 1.3vw;
     width: 100vw;
@@ -50,7 +51,6 @@ fieldset{border-width:0; padding:0; margin:0;}
   nav>section>div{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
     width: 100vw;
   }
@@ -182,13 +182,13 @@ fieldset{border-width:0; padding:0; margin:0;}
   article:nth-of-type(1)>section:nth-of-type(2)>div{
     font-size: 1.2vw;
     font-weight: bold;
-    padding: 2%;
+    padding: 1%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: solid;
-    align-items: center;
-    justify-content: space-around;
+    border: solid 1px;
+    align-items: space-between;
+    justify-content: space-evenly;
     margin-top: 4%;
   }
   section:nth-of-type(2)>div>h4{

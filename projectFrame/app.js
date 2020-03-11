@@ -23,6 +23,7 @@ let $deleteButton = $('<button>').html('DELETE THE TEXT').css({
     'padding': '2%',
     'font-family':'Barrio',
     'font-size':'1.2vw',
+    'margin-top':'2%',
 })
 $deleteButton.hide()
 $('#aboutMeDescription').append($deleteButton)
