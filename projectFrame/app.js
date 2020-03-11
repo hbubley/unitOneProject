@@ -7,6 +7,27 @@ $enterScreen.append($square)
 $square.append($button)
 $('main').hide()
 
+
+//aboutMe section
+let $aboutMeDescription = $('#aboutMeDescription > p')
+
+let $aboutMeButton = $('#aboutMeButton')
+$aboutMeDescription.hide()
+let $deleteButton = $('<button>').html('DELETE THE TEXT')
+$deleteButton.hide()
+$('#aboutMeDescription').append($deleteButton)
+
+$aboutMeButton.click(function(){
+    $aboutMeDescription.toggle()
+    $aboutMeButton.toggle()
+    $deleteButton.toggle()
+})
+$deleteButton.click(function(){
+    $aboutMeDescription.toggle()
+    $aboutMeButton.toggle()
+    $deleteButton.toggle()
+})
+
 //portfolio variables
 let $portfolioButton = $('.portfolioButton')
 let $portfolioContainer = $('article:nth-of-type(2)')
