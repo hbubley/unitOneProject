@@ -99,11 +99,22 @@
                     <label for="query">What's up?</label>
                     <textarea id="query" name="query" placeholder="Write something.." style="height:200px"></textarea>
                 
-                    <button name ='submit' type= "submit" value="Send it!">SUBMIT</button>
+                    <button type= 'submit'>SUBMIT</button>
                 
                   </form>
-                  <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
-               
+    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+    <script> const scriptURL = '<https://script.google.com/macros/s/AKfycbzamrUXrJZrf1q0zQuxZE7W2CPSaF5L8wLpmRXkzTkp02j2WPQ/exec>'
+            const form = document.forms['submit-to-google-sheet']  
+                    form.addEventListener('submit', e => {
+                        e.preventDefault()
+                        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                        .then(response => console.log('Success!', response))
+                        .catch(error => console.error('Error!', error.message))
+                        })
+                      </script>
+   </body>
             </section>
         </article>
 
@@ -117,16 +128,5 @@
     <div>
     </div>
     <script src="app.js"></script>
-    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
-    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
-    <script> const scriptURL = '<https://script.google.com/macros/s/AKfycbzamrUXrJZrf1q0zQuxZE7W2CPSaF5L8wLpmRXkzTkp02j2WPQ/exec>'
-            const form = document.forms['submit-to-google-sheet']  
-                    form.addEventListener('submit', e => {
-                        e.preventDefault()
-                        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                        .then(response => console.log('Success!', response))
-                        .catch(error => console.error('Error!', error.message))
-                        })
-                      </script>
-   </body>
+    
 </html>
