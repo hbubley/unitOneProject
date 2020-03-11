@@ -114,11 +114,3 @@ $returnButton.click(function(){
 
 
 //form api connecting it to google sheet https://github.com/jamiewilson/form-to-google-sheets learned how here
-const scriptURL = '<https://script.google.com/macros/s/AKfycbzUgVSp-X_XWOJtEVYKFE2T_MBk4wWntTdClfpBGjCn37ETDOym/exec>'
-const form = document.forms['submit-to-google-sheet']
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => console.log('Success!', response))
-    .catch(error => console.error('Error!', error.message))
-})
