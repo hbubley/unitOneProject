@@ -99,16 +99,17 @@
                     <button type='submit' id='subBut'>SUBMIT</button>
                 
                   </form>
-    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <!-- <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
     <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
-    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script> -->
+    <!-- //form api connecting it to google sheet https://github.com/jamiewilson/form-to-google-sheets learned how here -->
     <script> const scriptURL = 'https://script.google.com/macros/s/AKfycbzamrUXrJZrf1q0zQuxZE7W2CPSaF5L8wLpmRXkzTkp02j2WPQ/exec'
             const form = document.forms['submit-to-google-sheet'] 
                     form.addEventListener('submit', e => {
                         e.preventDefault()
                         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                         .then(function(){
-                            alert("YAY");
+                            alert("Successful ");
                             document.getElementById("formSub").reset();
                         })
                         .catch(error => console.error('Error!', error.message))
