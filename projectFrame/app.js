@@ -113,9 +113,9 @@ $returnButton.click(function(){
     $portfolioDiv.hide()
 })
 
-$('#subBut').click(function () {  
+$('#subBut').click(function () { 
+    $('form').reset() 
     alert('thank you for submitting!')
-    
 })
 //cat stuff
 // let $catDiv = $('<div>').css({'border':'solid', 'display':'flex', 'justify-content':'center', 'align-items':'center', 'max-height':'30vw'})
