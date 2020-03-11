@@ -113,10 +113,10 @@ $returnButton.click(function(){
     $portfolioDiv.hide()
 })
 
-function reset() = { 
+function reset(){ 
     $('input').reset() 
     $(this).alert('thank you for submitting!')
-})
+}
 //cat stuff
 // let $catDiv = $('<div>').css({'border':'solid', 'display':'flex', 'justify-content':'center', 'align-items':'center', 'max-height':'30vw'})
 // let $catButton=$('#specialButton')
