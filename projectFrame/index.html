@@ -7,10 +7,18 @@
     <link href="https://fonts.googleapis.com/css?family=Barrio&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:300&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-
-
-
+    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+    <script> const scriptURL = '<https://script.google.com/macros/s/AKfycbzamrUXrJZrf1q0zQuxZE7W2CPSaF5L8wLpmRXkzTkp02j2WPQ/exec>'
+            const form = document.forms['submit-to-google-sheet']  
+                    form.addEventListener('submit', e => {
+                        e.preventDefault()
+                        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                        .then(response => console.log('Success!', response))
+                        .catch(error => console.error('Error!', error.message))
+                        })
+                      </script>
     <script src="https://kit.fontawesome.com/e6353c5ec2.js" crossorigin="anonymous"></script>
  
     <title>Haley Bubley</title>
@@ -86,18 +94,6 @@
             </section>
             <!-- form -->
             <section>
-                <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
-                <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
-                <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
-                <script> const scriptURL = '<https://script.google.com/macros/s/AKfycbzamrUXrJZrf1q0zQuxZE7W2CPSaF5L8wLpmRXkzTkp02j2WPQ/exec>'
-                        const form = document.forms['submit-to-google-sheet']  
-                                form.addEventListener('submit', e => {
-                                    e.preventDefault()
-                                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                                    .then(response => console.log('Success!', response))
-                                    .catch(error => console.error('Error!', error.message))
-                                    })
-                                  </script>
                 <form name='submit-to-google-sheet'>
 
                     <label for="firstName">First Name</label>
