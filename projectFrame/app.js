@@ -101,18 +101,3 @@ $returnButton.click(function(){
     $portfolioDiv.hide()
 })
 
-
-//cat stuff
-// let $catDiv = $('<div>').css({'border':'solid', 'display':'flex', 'justify-content':'center', 'align-items':'center', 'max-height':'30vw'})
-// let $catButton=$('#specialButton')
-
-// $catImg=$('<img>').attr({'src':'https://res.cloudinary.com/dum4u7sro/image/upload/v1583789475/Untitled_design_3_sbevnh.png'}).css('height','40vw')
-
-// $catButton.click(function(){
-//     $('nav').after($catDiv);
-//     $catDiv.append($catImg);
-// })
-
-
-
-
