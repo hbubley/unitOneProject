@@ -113,7 +113,7 @@ $returnButton.click(function(){
     $portfolioDiv.hide()
 })
 
-$('#subBut').click(function () { 
+function reset() = { 
     $('input').reset() 
     $(this).alert('thank you for submitting!')
 })
