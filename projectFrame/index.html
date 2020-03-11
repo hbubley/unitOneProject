@@ -8,7 +8,18 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:300&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e6353c5ec2.js" crossorigin="anonymous"></script>
- 
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+    <script> const scriptURL = '<https://script.google.com/macros/s/AKfycbzamrUXrJZrf1q0zQuxZE7W2CPSaF5L8wLpmRXkzTkp02j2WPQ/exec>'
+            const form = document.forms['submit-to-google-sheet']  
+                    form.addEventListener('submit', e => {
+                        e.preventDefault()
+                        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                        .then(response => console.log('Success!', response))
+                        .catch(error => console.error('Error!', error.message))
+                        })
+                      </script>
+   </body>
     <title>Haley Bubley</title>
 </head>
 <body>
@@ -99,7 +110,7 @@
                     <label for="query">What's up?</label>
                     <textarea id="query" name="query" placeholder="Write something.." style="height:200px"></textarea>
                 
-                    <button name = 'submit' type= "submit" value="Send it!">SUBMIT</button>
+                    <button type= "submit">SUBMIT</button>
                 
                   </form>
                   <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
@@ -117,16 +128,4 @@
     <div>
     </div>
     <script src="app.js"></script>
-    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
-    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
-    <script> const scriptURL = '<https://script.google.com/macros/s/AKfycbzamrUXrJZrf1q0zQuxZE7W2CPSaF5L8wLpmRXkzTkp02j2WPQ/exec>'
-            const form = document.forms['submit-to-google-sheet']  
-                    form.addEventListener('submit', e => {
-                        e.preventDefault()
-                        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                        .then(response => console.log('Success!', response))
-                        .catch(error => console.error('Error!', error.message))
-                        })
-                      </script>
-   </body>
 </html>
