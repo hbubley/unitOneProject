@@ -408,6 +408,7 @@ fieldset{border-width:0; padding:0; margin:0;}
     flex-direction: column;
     justify-self: center;
     align-items: center;
+    max-height: 100vh;
   }
   article:nth-of-type(3)>section
   {
