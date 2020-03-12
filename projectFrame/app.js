@@ -7,6 +7,32 @@ $enterScreen.append($square)
 $square.append($button)
 $('main').hide()
 
+//nav bar
+const $hamBut = `<button class='hamBut'><i class="fal fa-bars"></i></button>`
+
+const $menuMobile = 
+`<div class='mobileMenu'>
+    <a href="#header">Back Up Top!</a>
+    <a href="#aboutMe">About Me</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contactMe">Contact Me!</a>
+</div>`
+$('body').prepend($menuMobile)
+$('main').prepend($hamBut)
+
+
+$('.mobileMenu').hide()
+
+$('.hamBut').click(function(){
+    $('.mobileMenu').toggle();
+})
+
+// let $links = $('nav>section>a')
+// $hamMenuDiv.hide()
+// $hamBut.click(function () {  
+//     $hamMenuDiv.toggle()
+//     $hamMenuDiv.append($links)
+// })
 
 //aboutMe section
 let $aboutMeDescription = $('#aboutMeDescription > p')
@@ -37,7 +63,8 @@ let $returnButton = $('<button>').html('Click me to go back!')
 function addPortfolioApp(projects){
         $portfolioDiv.css({'width':'97%', 'height': '80%','border': 'solid','display': 'flex','align-items': 'center','justify-content': 'space-between', 'flex-direction':'row', 'flex-wrap':'wrap','box-shadow': '5px 5px 10px #888888', 'background':'rgba(244,244,244,0.8)', 'margin-top':'2%'})
         for (let i = 0; i < projects.length; i++) {
-            let $card = `<div class="card">
+            let $card = 
+            `<div class="card">
                 <img class="pImg" src="${projects[i].image}"></img>
                 <div class="cardOverlay">
                     <h4>${projects[i].title}</h4>
