@@ -464,15 +464,16 @@ fieldset{border-width:0; padding:0; margin:0;}
     position: fixed;
     right: 3%;
     top: 10%;
-    background: rgba(244, 244, 244, 0.8);   
+    background: rgba(255, 128, 226, 0.4);   
   }
   .mobileMenu>a{
-    background: black;
-    color: white;
+    background: rgba(244, 244, 244, 0.8);
+    color: black;
     margin: 3% auto;
     width: 20vw;
     padding: 4%;
     font-family: 'Muli',serif;
+    border: solid 0.5px black;
   }
   nav{
     display: none;
